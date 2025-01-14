@@ -51,7 +51,7 @@
                 </h2>
                 <p> Prêt à donner vie à votre projet web ? Je suis votre  parfaite alliée. Je combine créativité et expertise technique pour concevoir des sites web qui convertissent. </p>
                 <div class="btn-sci">
-                    <a href="img/mon_cv.pdf'" class="btn" download="mon_cv.pdf">Mon CV</a>
+                    <a href="img/mon_cv.pdf'" class="btn" download="img/mon_cv.pdf">Mon CV</a>
                     <div class="sci">
                         <a href="#"><i class='bx bxl-github' ></i></a>
                         <a href="https://www.linkedin.com/in/amadine-houngan-0479b7303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
@@ -452,9 +452,10 @@
     
 
         <script>  
-              emailjs.init("BFIsYbqs7St8q_GFs"); 
+                emailjs.init("BFIsYbqs7St8q_GFs"); 
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
+              
                 emailjs.sendForm('service_3roxguv', 'template_q5n1ckw', this)
                     .then(function() {
                         alert('Message envoyé avec succès !');
