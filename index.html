@@ -451,7 +451,8 @@
         </section>
     
 
-        <script>   
+        <script>  
+              emailjs.init("BFIsYbqs7St8q_GFs"); 
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 emailjs.sendForm('service_3roxguv', 'template_q5n1ckw', this)
