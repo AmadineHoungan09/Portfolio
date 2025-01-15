@@ -1,1 +1,8 @@
-{}
+{
+  "name": "amadinehoungan",
+  "description": "Mon portfolio",
+  "require": {
+    "php": ">=7.4"
+  }
+}
+
