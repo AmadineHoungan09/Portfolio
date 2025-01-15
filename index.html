@@ -434,7 +434,7 @@
 
                 <div class="contact-box">
                     
-                    <form id="emailForm">
+                    <form action="process_form.php" method="POST">
                       
                         <h2 class="heading">Contactez <span>moi</span></h2>
                         <div class="field-box">
@@ -449,20 +449,6 @@
                 </div>
             </div>
         </section>
-
-        <script>
-            function sendEmail() {
-                const nom = document.getElementById('nom').value;
-                const email = document.getElementById('email').value;
-                const telephone = document.getElementById('telephone').value;
-                const objet = document.getElementById('objet').value;
-                const message = document.getElementById('message').value;
-        
-                const mailtoLink = `mailto:hounganamadine88@gmail.com?subject=Formulaire de contact&body=Nom: ${nom}%0AEmail: ${email}%0ATéléphone: ${telephone}%0AObjet: ${objet}%0AMessage: ${message}`;
-                window.location.href = mailtoLink;
-            }
-        </script>
-        
         
         <script src="js/home.js"></script>
     </body>
